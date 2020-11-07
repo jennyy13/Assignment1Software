@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mycompany.app.StudentTest" time="0.123" tests="6" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mycompany.app.StudentTest" time="0.112" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IE"/>
     <property name="sun.boot.library.path" value="/Users/jennifermurray/Library/Java/JavaVirtualMachines/openjdk-15/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/jennifermurray/Documents/githubSetUp/Assignment1Software/my-app/target/surefire/surefirebooter10197778411148314978.jar /Users/jennifermurray/Documents/githubSetUp/Assignment1Software/my-app/target/surefire 2020-11-06T23-43-33_661-jvmRun1 surefire4886795993123541519tmp surefire_010518358242014878542tmp"/>
+    <property name="sun.java.command" value="/Users/jennifermurray/Documents/githubSetUp/Assignment1Software/my-app/target/surefire/surefirebooter16441693983126562643.jar /Users/jennifermurray/Documents/githubSetUp/Assignment1Software/my-app/target/surefire 2020-11-07T15-39-47_191-jvmRun1 surefire12829482163081490370tmp surefire_08070287152922834946tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/jennifermurray/Documents/githubSetUp/Assignment1Software/my-app/target/test-classes:/Users/jennifermurray/Documents/githubSetUp/Assignment1Software/my-app/target/classes:/Users/jennifermurray/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/jennifermurray/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/jennifermurray/.m2/repository/joda-time/joda-time/2.10.6/joda-time-2.10.6.jar:"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/Users/jennifermurray/Documents/githubSetUp/Assignment1Software/my-app/target/surefire/surefirebooter10197778411148314978.jar"/>
+    <property name="surefire.real.class.path" value="/Users/jennifermurray/Documents/githubSetUp/Assignment1Software/my-app/target/surefire/surefirebooter16441693983126562643.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="15+36-1562"/>
@@ -53,18 +53,10 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="getAge" classname="com.mycompany.app.StudentTest" time="0.076"/>
-  <testcase name="getDOB" classname="com.mycompany.app.StudentTest" time="0.001"/>
-  <testcase name="getRegisteredCourses" classname="com.mycompany.app.StudentTest" time="0.006">
-    <failure message="expected:&lt;[com.mycompany.app.CourseProgramme@467aecef]&gt; but was:&lt;[com.mycompany.app.CourseProgramme@4d50efb8]&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<[com.mycompany.app.CourseProgramme@467aecef]> but was:<[com.mycompany.app.CourseProgramme@4d50efb8]>
-	at com.mycompany.app.StudentTest.getRegisteredCourses(StudentTest.java:54)
-]]></failure>
-  </testcase>
-  <testcase name="getRegisteredModules" classname="com.mycompany.app.StudentTest" time="0.001">
-    <failure message="expected:&lt;[com.mycompany.app.Module@5bb21b69, com.mycompany.app.Module@6b9651f3]&gt; but was:&lt;[com.mycompany.app.Module@38bc8ab5, com.mycompany.app.Module@687080dc]&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<[com.mycompany.app.Module@5bb21b69, com.mycompany.app.Module@6b9651f3]> but was:<[com.mycompany.app.Module@38bc8ab5, com.mycompany.app.Module@687080dc]>
-	at com.mycompany.app.StudentTest.getRegisteredModules(StudentTest.java:59)
-]]></failure>
-  </testcase>
-  <testcase name="getName" classname="com.mycompany.app.StudentTest" time="0"/>
-  <testcase name="getUsername" classname="com.mycompany.app.StudentTest" time="0.001"/>
+  <testcase name="getAge" classname="com.mycompany.app.StudentTest" time="0.071"/>
+  <testcase name="getDOB" classname="com.mycompany.app.StudentTest" time="0"/>
+  <testcase name="getRegisteredCourses" classname="com.mycompany.app.StudentTest" time="0"/>
+  <testcase name="getRegisteredModules" classname="com.mycompany.app.StudentTest" time="0"/>
+  <testcase name="getName" classname="com.mycompany.app.StudentTest" time="0.001"/>
+  <testcase name="getUsername" classname="com.mycompany.app.StudentTest" time="0"/>
 </testsuite>

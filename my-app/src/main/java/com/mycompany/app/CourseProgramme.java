@@ -17,6 +17,19 @@ public class CourseProgramme {
         this.endDate = endDate;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if(obj == this ) {
+            return true;
+        }
+        if(!(obj instanceof CourseProgramme)) {
+            return false;
+        }
+
+        CourseProgramme courseProgramme = (CourseProgramme) obj;
+        return this.courseName == courseProgramme.courseName && this.startDate == courseProgramme.startDate && this.endDate == courseProgramme.endDate;
+    }
+
     public void addStudent(Student student) {
         courseStudents.add(student);
     }
@@ -45,3 +58,6 @@ public class CourseProgramme {
         return endDate;
     }
 }
+
+
+

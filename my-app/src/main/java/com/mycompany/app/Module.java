@@ -15,6 +15,20 @@ public class Module {
         this.moduleID = moduleID;
     }
 
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj == this ) {
+            return true;
+        }
+        if(!(obj instanceof Module)) {
+            return false;
+        }
+
+        Module module = (Module) obj;
+        return this.moduleName == module.moduleName && this.moduleID == module.moduleID;
+    }
+
     public void addStudent(Student student) {
         moduleStudents.add(student);
     }

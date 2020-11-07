@@ -24,7 +24,8 @@ public class ModuleTest {
         moduleTest.addStudent(student1);
         course1 = new CourseProgramme("Comp Sci", new DateTime("2020-09-28"), new DateTime("2021-05-20"));
         moduleTest.addCourse(course1);
-        studentTest = new ArrayList<Student> (Arrays. asList(new Student("Jennifer", 21, new DateTime("1999-09-14"), 17309551)));
+        studentTest = new ArrayList<Student> ();
+        studentTest.add(student1);
         courseTest = new ArrayList<CourseProgramme> ();
         courseTest.add(course1);
     }
@@ -36,11 +37,19 @@ public class ModuleTest {
 
     @Test
     public void getModuleStudents() {
-        assertEquals(studentTest, moduleTest.getModuleStudents());
+        ArrayList<Student> moduleStudents = moduleTest.getModuleStudents();
+        assertEquals(moduleStudents.size(), studentTest.size());
+        for (int i =0; i< moduleStudents.size(); i++){
+            assertEquals(studentTest.get(i), moduleStudents.get(i));
+        }
     }
 
     @Test
     public void getModuleCourses() {
-        assertEquals(courseTest, moduleTest.getModuleCourses());
+        ArrayList<CourseProgramme> moduleCourses = moduleTest.getModuleCourses();
+        assertEquals(moduleCourses.size(), courseTest.size());
+        for (int i =0; i< moduleCourses.size(); i++){
+            assertEquals(courseTest.get(i), moduleCourses.get(i));
+        }
     }
 }

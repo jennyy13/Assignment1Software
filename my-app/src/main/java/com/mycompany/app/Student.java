@@ -20,6 +20,19 @@ public class Student {
         this.ID = ID;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if(obj == this ) {
+            return true;
+        }
+        if(!(obj instanceof Student)) {
+            return false;
+        }
+
+        Student student = (Student) obj;
+        return this.name == student.name && this.age == student.age && this.DOB == student.DOB && this.ID == student.ID;
+    }
+
     public void addCourse(CourseProgramme course) {
         registeredCourses.add(course);
     }

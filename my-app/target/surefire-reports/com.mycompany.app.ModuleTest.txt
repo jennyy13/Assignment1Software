@@ -1,12 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.mycompany.app.ModuleTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in com.mycompany.app.ModuleTest
-getModuleStudents(com.mycompany.app.ModuleTest)  Time elapsed: 0 s  <<< FAILURE!
-java.lang.AssertionError: expected:<[com.mycompany.app.Student@26a7b76d]> but was:<[com.mycompany.app.Student@4abdb505]>
-	at com.mycompany.app.ModuleTest.getModuleStudents(ModuleTest.java:35)
-
-getModuleCourses(com.mycompany.app.ModuleTest)  Time elapsed: 0 s  <<< FAILURE!
-java.lang.AssertionError: expected:<[com.mycompany.app.CourseProgramme@7ce6a65d]> but was:<[com.mycompany.app.CourseProgramme@1500955a]>
-	at com.mycompany.app.ModuleTest.getModuleCourses(ModuleTest.java:40)
-
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.mycompany.app.ModuleTest
