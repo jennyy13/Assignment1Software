@@ -34,16 +34,6 @@ public class CourseProgrammeTest {
         assertEquals( "Comp Sci", courseProgrammeTest.getCourseName());
     }
 
-//    @Test
-//    public void getCourseStudents() {
-//        assertEquals(studentTest, courseProgrammeTest.getCourseStudents());
-//    }
-
-//    @Test
-//    public void getCourseModules() {
-//        assertEquals(moduleTest, courseProgrammeTest.getCourseModules());
-//    }
-
     @Test
     public void getStartDate() {
         assertEquals(DateTime.parse("2020-09-28"), courseProgrammeTest.getStartDate());
