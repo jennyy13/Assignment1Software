@@ -1,13 +1,8 @@
-#### CI CONFIG
-
 language: java
 
 jdk:
 - oraclejdk8
 
 build:
-  ci:
-  - mvn install -DskipTests=true
-  - mvn test
-
-#### END OF CI CONFIG
+   ci:
+   - mvn test
